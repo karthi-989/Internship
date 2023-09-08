@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Image Generator</title>
+</head>
+<body>
+  <div id="imageContainer">
+    <img id="randomImage" src="" alt="Random Image">
+  </div>
+  <button id="generateButton">Generate Random Image</button>
+
+  <script>
+    const imageUrls = [
+    '1.jpg',
+    '3.jpg',
+    '2.jpg',
+      ]
+
+    function displayRandomImage() {
+      const imageContainer = document.getElementById('randomImage');
+      const randomIndex = Math.floor(Math.random() * imageUrls.length);
+      imageContainer.src = imageUrls[randomIndex];
+    }
+
+    const generateButton = document.getElementById('generateButton');
+    generateButton.addEventListener('click', displayRandomImage);
+
+    displayRandomImage();
+  </script>
+</body>
+</html>

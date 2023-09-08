@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="karthi" onMouseOver="highlight()" onMouseOut="return_normal()" > have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with</b></p>
+</body>
+<script>
+ 
+var bold_Items;
+window.onload = getBold_items();
+ 
+
+function getBold_items() 
+{
+  bold_Items = document.getElementsByTagName('strong'); 
+}
+
+function highlight() 
+{
+   for (var i=0; i<bold_Items.length; i++)
+   {                                                    
+    bold_Items[i].style.color = "green";
+    }
+}
+
+// On mouse out highlighted words become black
+function return_normal()
+{
+  for (var i=0; i<bold_Items.length; i++) 
+  {
+       bold_Items[i].style.color = "black";
+  }
+}
+
+</script>
+</html>

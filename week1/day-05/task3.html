@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="http://www.google.com" rel="norelation" hreflang="en" target="_blank" id="karthi"> click</a>
+    <title>Document</title>
+</head>
+<body>
+    <p>getting values from attributes</p>
+    <script>
+     function getLinkAttributes(linkId) {
+  const x= document.getElementById(linkId);
+
+  const href = x.getAttribute("href");
+  const hreflang = x.getAttribute("hreflang");
+  const rel = x.getAttribute("rel");
+  const target = x.getAttribute("target");
+
+  const linkAttributes = {
+    href,
+    hreflang,
+    rel,
+    target,
+    
+  };
+
+  return linkAttributes;
+}
+
+const linkAttributes = getLinkAttributes("karthi");
+console.log(linkAttributes);
+
+    </script>
+</body>
+</html>
