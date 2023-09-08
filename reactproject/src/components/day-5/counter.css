@@ -1,0 +1,13 @@
+#btn2{
+    float: right;
+}
+#title{
+   font-size: 25px;
+   margin-left: 200px;
+   width: 50%;
+   padding: 10px;
+}
+#countercard{
+    width: 500px;
+    margin-left: 600px;
+}

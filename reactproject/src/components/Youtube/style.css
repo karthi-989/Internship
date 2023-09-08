@@ -1,0 +1,111 @@
+#youtube{
+    display: flex;
+}
+.icon{
+    float:left;
+    margin-right: 28px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+.sidenav{
+    
+    overflow-y: scroll; 
+    position: fixed; 
+
+    /* z-index: -1; */
+}
+/* body{
+    background-color: black;
+} */
+.cr{
+    
+    position: static;
+    z-index: -1;
+
+}
+/* .btn{
+    width: 200px;
+} */
+/* .btn:hover{
+    background-color: rgb(214, 212, 212);
+    cursor: pointer;
+    width: 215px; */
+    
+#topbtn{
+    background-color: rgb(238, 237, 237) ;
+}
+
+.nav-menu {
+    width: 0px; /* Initially, hide the sidebar */
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s; /* Add a smooth transition when toggling */
+     /* Ensure the sidebar is on top of other content */
+  }
+  
+  /* CSS for the active sidebar */
+  .nav-menu.active {
+    width: 250px; /* Adjust the width of the active sidebar as needed */
+   
+  }
+  
+
+  /* CSS for the button on hover (optional) */
+  .btn:hover {
+    background-color: #555; /* Button background color on hover */
+  }
+  
+  /* CSS for the FontAwesome icon */
+  /* .icon {
+    margin-right: 10px;
+    width: 25px;
+  } */
+.collapseDiv{
+    background-color: black;
+    display: block;
+    width: 12%;
+    display: none;
+
+}
+.collapse-divCon{
+    padding: 2px;
+}
+.collapse-divCon button{
+    width: 70px;
+    border-radius: 20px;
+    height: 70px;
+    background-color: white;
+    border: none;
+}
+.collapse-divCon button:hover{
+    background-color: rgb(238, 233, 233);
+}
+.collapse-divCon button h6{
+    font-size: 11px;
+}
+.newContent.active{
+    left:0;
+    transition: translateX(0);
+    flex: 1;
+}
+.newContent{
+    width: 5%;
+    height: 90vh;
+    display: block;
+    position: fixed;
+    top:0;
+    left:-100%;
+    transition: transform 350ms;
+    margin-top: 70px; 
+
+}
+.content{
+   
+    transition: margin-left 350ms; 
+    margin-top: 30px;
+   
+}
+.content.collapsed{
+    margin-left: 90px;
+}
