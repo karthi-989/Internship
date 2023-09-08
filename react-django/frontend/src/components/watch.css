@@ -1,0 +1,19 @@
+#watch{
+    width: 60px;
+    height: auto;
+}
+thead{
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+#table{
+    margin-top: 13%
+}
+.button-container {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: space-between; /* Distribute space evenly between items */
+    align-items: center; /* Align items vertically in the center */
+  }
+  
